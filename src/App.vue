@@ -16,9 +16,6 @@
         <template #headerActions>
           <HeaderActions @showSetting="showSetting = true" />
         </template>
-        <template #pageFooter>
-          <PageFooter />
-        </template>
         <template #themeEditorTab>
           <a-tab-pane tab="其它" key="other">
             <Setting />
@@ -35,7 +32,7 @@
   import { useRouter } from 'vue-router';
   import { useAccountStore, useMenuStore, useSettingStore, storeToRefs } from '@/store';
   import avatar from '@/assets/avatar.png';
-  import { PageFooter, HeaderActions } from '@/components/layout';
+  import {HeaderActions } from '@/components/layout';
   import Setting from './components/setting';
   import { LoginModal } from '@/pages/login';
   import { configTheme, themeList } from '@/theme';
